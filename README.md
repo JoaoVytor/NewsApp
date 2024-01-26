@@ -5,15 +5,15 @@ News App is a simple iOS application that allows users to stay updated with the 
 ## Features
 
 - View a list of top headlines.
+- Search for the entered word
 - Click on a news article to view the full details in a browser.
 
 ## Screenshots
 
 ### Home Screen - List of News Articles
 
-<img src="https://github.com/JoaoVytor/NewsApp/assets/57421236/06ce4cd1-0a28-432b-84de-13df47edc8cc" width="321" height="694" alt="Home Screen 1">
-
-<img src="https://github.com/JoaoVytor/NewsApp/assets/57421236/153f0c19-51f9-4092-a774-d032f657dae7" width="321" height="694" alt="Home Screen 2">
+<img src="https://github.com/JoaoVytor/NewsApp/assets/57421236/7719c2d8-16ad-4def-b3fa-616d04420b1a" width="321" height="694" alt="Home Screen 1">
+<img src="https://github.com/JoaoVytor/NewsApp/assets/57421236/3c6eb1ff-1bbe-4dba-9a71-c30bec952e80" width="321" height="694" alt="Home Screen 2">
 
 ### News Article Details - Opened in Browser
 
