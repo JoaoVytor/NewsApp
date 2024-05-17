@@ -75,22 +75,27 @@ class NewsTableViewCell: UITableViewCell {
     func configure(with viewModel: NewsTableViewCellViewModel) {
         newsTitleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.subtitle
-        
+
         if let data = viewModel.imageData {
             newsImageView.image = UIImage(data: data)
         } else if let url = viewModel.imageURL {
-            
-            URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-                
-                guard let data = data, error == nil else {
-                    return
-                }
-                
-                viewModel.imageData = data
-                DispatchQueue.main.async {
-                    self?.newsImageView.image = UIImage(data: data)
-                }
-            }.resume()
+            let cacheKey = url.absoluteString
+
+            if let cachedImage = ImageCache.shared.getImage(forKey: cacheKey) {
+                newsImageView.image = cachedImage
+            } else {
+                URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+                    guard let data = data, error == nil, let image = UIImage(data: data) else {
+                        return
+                    }
+
+                    ImageCache.shared.setImage(image, forKey: cacheKey)
+                    viewModel.imageData = data
+                    DispatchQueue.main.async {
+                        self?.newsImageView.image = image
+                    }
+                }.resume()
+            }
         }
     }
 }

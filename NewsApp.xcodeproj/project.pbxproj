@@ -17,6 +17,7 @@
 		7A4E23D82B63FD8100D386F4 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E23D72B63FD8100D386F4 /* NewsTableViewCell.swift */; };
 		7A6926B22B64487B00C7DEEB /* NewsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6926B12B64487B00C7DEEB /* NewsTableViewCellViewModel.swift */; };
 		7A6926B42B64621400C7DEEB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6926B32B64621400C7DEEB /* NewsModel.swift */; };
+		7AC7DC752BF80F8100ACDDCD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC7DC742BF80F8100ACDDCD /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7A4E23D72B63FD8100D386F4 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		7A6926B12B64487B00C7DEEB /* NewsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		7A6926B32B64621400C7DEEB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		7AC7DC742BF80F8100ACDDCD /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				7A4E23D52B63F52E00D386F4 /* APICaller.swift */,
+				7AC7DC742BF80F8100ACDDCD /* ImageCache.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				7A6926B42B64621400C7DEEB /* NewsModel.swift in Sources */,
 				7A4E23C62B63F33E00D386F4 /* NewsViewController.swift in Sources */,
+				7AC7DC752BF80F8100ACDDCD /* ImageCache.swift in Sources */,
 				7A4E23C22B63F33E00D386F4 /* AppDelegate.swift in Sources */,
 				7A4E23D82B63FD8100D386F4 /* NewsTableViewCell.swift in Sources */,
 				7A4E23C42B63F33E00D386F4 /* SceneDelegate.swift in Sources */,
